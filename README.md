@@ -1,4 +1,4 @@
-#Software Engineering Methods
+# Software Engineering Methods
 
 
 - Master Build Status ![workflow](https://github.com/MilanFly/sem/actions/workflows/main.yml/badge.svg)
