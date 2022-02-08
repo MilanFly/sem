@@ -1,4 +1,4 @@
-name: Workflow-for-hello-world-app
+name: Simple workflow
 on: push
 
 jobs:
