@@ -20,6 +20,8 @@ jobs:
           distribution: 'adopt'
       - name: Unit Tests
         run: mvn -Dtest=com.napier.sem.AppTest test
+      - name: Codecov
+        uses: codecov/codecov-action@v2.1.0
 
   IntegrationTests:
     name: Integration Tests
@@ -41,7 +43,9 @@ jobs:
           mvn -Dtest=com.napier.sem.AppIntegrationTest test
           docker stop employees
           docker rm employees
-          docker image rm database                    
+          docker image rm database
+      - name: Codecov
+        uses: codecov/codecov-action@v2.1.0
 
   build:
     name: Build and Start Using docker-compose
